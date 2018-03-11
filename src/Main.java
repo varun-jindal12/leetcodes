@@ -238,8 +238,43 @@ public class Main {
         /*TestByReference testByReference = new TestByReference();
         testByReference.printSwapped(5,10);*/
 
-        CouldBePalindrome couldBePalindrome = new CouldBePalindrome();
+        /*CouldBePalindrome couldBePalindrome = new CouldBePalindrome();
         String s = "ajkdfnkjsldgbrgbdsfogin";
-        System.out.println(couldBePalindrome.checkPalindrome(s));
+        System.out.println(couldBePalindrome.checkPalindrome(s));*/
+
+        /*MaxConsecutiveOne maxConsecutiveOne = new MaxConsecutiveOne();
+        int nums[] = {1,1,0,1,1,1};
+        System.out.println(maxConsecutiveOne.findMaxConsecutiveOnes(nums));*/
+
+        /*MyAlerter myAlerter = new MyAlerter();
+        int nums[] = {200,2,200,2,2,200}, size = 3;
+        double threshold = 2.5;
+        System.out.println(myAlerter.alertMe(nums,size,threshold));*/
+
+        /*DetectCapital detectCapital = new DetectCapital();
+        String word = "Capital";
+        System.out.println(detectCapital.detectCapitalUse(word));*/
+
+        /*MostFrequent mostFrequent = new MostFrequent();
+        int nums[] = {1,2};
+//                {1,1,1,2,2,3}
+        int k = 2;
+        System.out.println(mostFrequent.topKFrequent(nums,k));*/
+
+        /*SumOf4 sumOf4 = new SumOf4();
+        int [] A = {1,2}, B = {-2,-1}, C = {-1,2}, D = {0,2};
+        System.out.println(sumOf4.fourSumCount(A,B,C,D));*/
+
+        /*FindTheDifference findTheDifference = new FindTheDifference();
+        String t = "abcde", s = "abcd";
+        System.out.println(findTheDifference.findTheDifference(s,t));*/
+
+        /*MissingNumbers missingNumbers = new MissingNumbers();
+        int nums[] = {4,3,2,7,8,2,3,1};
+        System.out.println(missingNumbers.findDisappearedNumbers(nums));*/
+
+        RotatingNumbers rotatingNumbers = new RotatingNumbers();
+        System.out.println(rotatingNumbers.rotatedDigits(10));
+
     }
 }
