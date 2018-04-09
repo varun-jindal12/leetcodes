@@ -1,4 +1,5 @@
 import com.sun.corba.se.impl.orb.ParserTable;
+import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.Arrays;
 import java.util.List;
@@ -273,8 +274,54 @@ public class Main {
         int nums[] = {4,3,2,7,8,2,3,1};
         System.out.println(missingNumbers.findDisappearedNumbers(nums));*/
 
-        RotatingNumbers rotatingNumbers = new RotatingNumbers();
-        System.out.println(rotatingNumbers.rotatedDigits(10));
+        /*RotatingNumbers rotatingNumbers = new RotatingNumbers();
+        System.out.println(rotatingNumbers.rotatedDigits(10));*/
+
+        /*SortingStringWithNumbers sortingStringWithNumbers = new SortingStringWithNumbers();
+        String str[] = {
+                "USA" + Integer.toString(10),
+                "CESKO" + Integer.toString(2),
+                "KANADA" + Integer.toString(32),
+                "SLOVENSKO" + Integer.toString(11),
+                "SPANELSKO" + Integer.toString(22),
+                "NIZOZEMI" + Integer.toString(3),
+                "NEMECKO" + Integer.toString(31),
+        };
+        System.out.println(Arrays.deepToString(sortingStringWithNumbers.sortByNumbers(str)));*/
+
+        /*RangeAddition rangeAddition = new RangeAddition();
+        int ops[][] = {{2,2},{3,3}};
+        System.out.println(rangeAddition.maxCount(3,3,ops));*/
+
+        /*RectanglarArea rectanglarArea = new RectanglarArea();
+        int area = 1;
+        while(area<=50){
+            System.out.println(area+" "+Arrays.toString(rectanglarArea.constructRectangle(area)));
+            area++;
+        }*/
+
+        /*CheckNull checkNull = new CheckNull();
+        String str = null;
+        System.out.println(checkNull.checkNull(str));*/
+
+        /*MinimumMovesToEquate minimumMovesToEquate = new MinimumMovesToEquate();
+        int nums[] = {1,2,3};
+        System.out.println(minimumMovesToEquate.minMoves(nums));*/
+
+        DegreeOfArray degreeOfArray = new DegreeOfArray();
+        int nums[] = {1,2,1,3,3};
+        System.out.println(degreeOfArray.findShortestSubArray(nums));
+
+        /*SpiralMatrix spiralMatrix = new SpiralMatrix();
+        int matrix[][] = {{1},{2},{3}};
+                        *//*{{1, 2, 3, 10}
+                        ,{4, 5, 6, 11}
+                        ,{7, 8, 9, 12}};*//*
+        System.out.println(spiralMatrix.spiralOrder(matrix));*/
+
+        /*FindPattern findPattern = new FindPattern();
+        String s = "abcdabcd";
+        System.out.println(findPattern.findPatternIfExist(s));*/
 
     }
 }
