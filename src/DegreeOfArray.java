@@ -5,32 +5,7 @@ import java.util.Map;
 
 public class DegreeOfArray {
     public int findShortestSubArray(int[] nums) {
-        /*int frequency[] = new int[50000], max = 0,num = 0,lastPos = 0, firstPos=0,maxLength = 0;
-        List<Integer> allMax = new ArrayList<>();
-        for(int i = 0; i<nums.length;i++){
-            frequency[nums[i]]++;
-            if (frequency[nums[i]]>max){
-                num = nums[i];
-                max = frequency[nums[i]];
-                lastPos = i;
-            }
-        }
-        for(int i = 0 ;i<frequency.length;++i){
-            if(frequency[i] == max){
-                allMax.add(i);
-            }
-        }
-        for(int number:allMax){
-            for(int i = 0;i<nums.length;i++){
-                if(nums[i] == number){
-                    firstPos = i;
-                    break;
-                }
-            }
-//            if(maxLength<)
-        }
 
-        return lastPos - firstPos + 1;*/
         Map<Integer,Integer> numFreq = new HashMap<>();
         Map<Integer,Integer[]> numRange = new HashMap<>();
         int degree = 0,minLength = nums.length;
