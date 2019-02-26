@@ -7,6 +7,7 @@ public class BinaryTree {
             this.key = key;
             left = right = null;
         }
+
     }
     Node root;
     BinaryTree(){

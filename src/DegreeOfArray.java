@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class DegreeOfArray {
     public int findShortestSubArray(int[] nums) {
-        // hey just testing
         Map<Integer,Integer> numFreq = new HashMap<>();
         Map<Integer,Integer[]> numRange = new HashMap<>();
         int degree = 0,minLength = nums.length;

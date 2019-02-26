@@ -1,6 +1,8 @@
-import com.sun.corba.se.impl.orb.ParserTable;
-import com.sun.org.apache.regexp.internal.RE;
+//import com.sun.corba.se.impl.orb.ParserTable;
+//import com.sun.org.apache.regexp.internal.RE;
+//import com.sun.org.apache.xpath.internal.SourceTree;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -308,9 +310,9 @@ public class Main {
         int nums[] = {1,2,3};
         System.out.println(minimumMovesToEquate.minMoves(nums));*/
 
-        DegreeOfArray degreeOfArray = new DegreeOfArray();
+        /*DegreeOfArray degreeOfArray = new DegreeOfArray();
         int nums[] = {1,2,1,3,3};
-        System.out.println(degreeOfArray.findShortestSubArray(nums));
+        System.out.println(degreeOfArray.findShortestSubArray(nums));*/
 
         /*SpiralMatrix spiralMatrix = new SpiralMatrix();
         int matrix[][] = {{1},{2},{3}};
@@ -322,6 +324,164 @@ public class Main {
         /*FindPattern findPattern = new FindPattern();
         String s = "abcdabcd";
         System.out.println(findPattern.findPatternIfExist(s));*/
+
+        /*countAndSayOriginal countAndSayOriginal = new countAndSayOriginal();
+        String str = "111222277899";
+        System.out.println(countAndSayOriginal.countAndSay(str));*/
+
+         /*RefactorKey refactorKey = new RefactorKey();
+        String str = "2-4A0r7-";
+        System.out.println(refactorKey.solution(str,3));*/
+
+        /*Tree tree = new Tree();
+        System.out.println("bfs traversal :");
+        tree.treeCaller();*/
+
+        /*PermutationOfString permutationOfString = new PermutationOfString();
+        permutationOfString.driver();*/
+
+        /*LeftRotation leftRotation = new LeftRotation();
+        int a[] = {1,2,3,4,5};
+        int r = 2;
+        leftRotation.leftRotate(a,r);*/
+
+        /*CircleSummation circleSummation = new CircleSummation();
+        int[] children = {1,2,1,500000000,500000000,1000000000};
+        int rounds = 1000000000;
+        circleSummation.printCircleSummation(children,rounds);*/
+
+        /*QuickSort quickSort = new QuickSort();
+        List<Integer> nums = Arrays.asList(5,4);
+        System.out.println(quickSort.quickSort(nums).toString());*/
+
+        /*TotalPossiblePathsMatrix totalPossiblePathsMatrix = new TotalPossiblePathsMatrix();
+        boolean[][] matrix = {{true,true,true},
+                            {true, true,true},
+                            {true, true,true}};
+        System.out.println(totalPossiblePathsMatrix.calPossiblePaths(matrix));*/
+
+        /*FibonacciMemorization fibonacciMemorization = new FibonacciMemorization();
+        System.out.println(fibonacciMemorization.fibonacci(9));*/
+
+        /*HeapDataStructure heapDataStructure = new HeapDataStructure();
+        heapDataStructure.runHeap();*/
+
+        /*MergeSort mergeSort = new MergeSort();
+        int [] nums = {14,1,5,4,18,22,16,3};
+        System.out.println(Arrays.toString(mergeSort.runMergeSort(nums)));*/
+
+        /*ToLowerCase toLowerCase = new ToLowerCase();
+        String str = "Fuck you ASSHOLE";
+        System.out.println(toLowerCase.toLowerCase(str));*/
+
+//        UniqueMorseCode uniqueMorseCode = new UniqueMorseCode();
+//        String[] words = {"gin", "zen", "gig", "msg"};
+//        System.out.println(uniqueMorseCode.uniqueMorseRepresentations(words));
+
+        /*SortByParity sortByParity = new SortByParity();
+        int array[] = {3,5,1,8};
+        System.out.println(Arrays.toString(sortByParity.sortArrayByParity(array)));*/
+
+        /*BuySellStocks2 buySellStocks2 = new BuySellStocks2();
+        int[] prices = {7,6,4,3,1};
+        System.out.println(buySellStocks2.maxProfit(prices));*/
+
+        /*RotateArrays rotateArrays = new RotateArrays();
+        int[] nums = {1,2,3,4,5,6,7};
+        int k = 3;
+        rotateArrays.rotate(nums,k);
+        System.out.println(Arrays.toString(nums)); */
+
+        /*AddParanthesis  addParanthesis = new AddParanthesis();
+        String str = "(())))";
+        System.out.println(addParanthesis.addParanthisis(str));*/
+
+        /*InactiveAndActiveCells inactiveAndActiveCells = new InactiveAndActiveCells();
+        int[] states = {1,1,1,0,1,1,1,1};
+        int days = 2;
+        System.out.println(inactiveAndActiveCells.inactiveAndActiveCells(states, days));*/
+
+        /*KClosestPointsToOrigin kClosestPointsToOrigin = new KClosestPointsToOrigin();
+        List<List<Integer>> points = Arrays.asList(
+                Arrays.asList( 1, 2 ),
+                Arrays.asList( 3, 4),
+                Arrays.asList( 1, -1) );
+        int destination = 3, deliveries = 2;
+        System.out.println(kClosestPointsToOrigin.kClosest(destination,points,deliveries));*/
+        /*MaxAverageOfMArrayTree maxAverageOfMArrayTree = new MaxAverageOfMArrayTree();
+        NaryNode c = new NaryNode(20);
+        NaryNode c1 = new NaryNode(12);
+        NaryNode c2 = new NaryNode(18);
+
+        NaryNode c3 = new NaryNode(11);
+        NaryNode c4 = new NaryNode(2);
+        NaryNode c5 = new NaryNode(3);
+
+        NaryNode c6 = new NaryNode(15);
+        NaryNode c7 = new NaryNode(8);
+
+        ArrayList<NaryNode> rootList = new ArrayList<>();
+        rootList.add(c1);
+        rootList.add(c2);
+
+        c.children = rootList;
+
+        ArrayList<NaryNode> c1List = new ArrayList<>();
+        c1List.add(c3);
+        c1List.add(c4);
+        c1List.add(c5);
+
+        c1.children = c1List;
+
+        ArrayList<NaryNode> c2List = new ArrayList<>();
+        c2List.add(c6);
+        c2List.add(c7);
+
+        c2.children = c2List;
+
+        //double res = calculateAverage(c, c.value, 1);
+        double average = maxAverageOfMArrayTree.calculateaverage(c, 0);
+        System.out.println(average);*/
+
+        /*TreeNode node1 = new TreeNode(2);
+        TreeNode node2 = new TreeNode(1);
+        TreeNode node3 = new TreeNode(5);
+        TreeNode node4 = new TreeNode(8);
+        TreeNode node5 = new TreeNode(3);
+        TreeNode node6 = new TreeNode(6);
+        TreeNode node7 = new TreeNode(7);
+
+        node1.left = node2;
+        node1.right = node5;
+        node2.left = node3;
+        node2.right = node4;
+        node5.left = node6;
+        node5.right = node7;
+
+        TreeTraversal treeTraversal = new TreeTraversal();
+        System.out.println(treeTraversal.inOrderTraversal(node1));*/
+
+        /*CompareVersionNumbers compareVersionNumbers = new CompareVersionNumbers();
+        String str1 = "7.5.2.5";
+        String str2 = "7.5.3";
+        System.out.println(compareVersionNumbers.compareVersionNumbers(str1, str2));*/
+
+        /*SetMatrixZeroes setMatrixZeroes = new SetMatrixZeroes();
+        int[][] matrix = {{1,1,1},
+                          {1,0,1},
+                          {1,1,1}};
+        setMatrixZeroes.setMatrixZeroes(matrix);
+        System.out.println(Arrays.deepToString(matrix));*/
+
+        /*TopFrequentWordExludingGiven topFrequentWordExludingGiven = new TopFrequentWordExludingGiven();
+        String str = "Jack and Jill went to the market to buy bread and cheese. Cheese is Jack's and Jill's favourite food";
+        //String str = " ";
+        List<String> exclude = Arrays.asList("and", "he", "the", "to", "is", "jack", "Jill");
+        System.out.println(topFrequentWordExludingGiven.retrieveMostFrequestWords(str, exclude));*/
+
+        ProductExceptSelf productExceptSelf = new ProductExceptSelf();
+        int[] nums = {1,2,3,4};
+        System.out.println(Arrays.toString(productExceptSelf.productExceptSelf(nums)));
 
     }
 }
