@@ -16,8 +16,6 @@ public class TopFrequentWordExludingGiven {
             if(!mySet.contains(word) && !word.equals("")){
                 int count = map.getOrDefault(word, 0);
                 map.put(word, count+1);
-                    //map.put(word, (map.get(word)+1));
-
                 maxFrequency = count+1> maxFrequency?count+1:maxFrequency;
             }
         }
@@ -27,7 +25,6 @@ public class TopFrequentWordExludingGiven {
                 result.add(entry.getKey());
             }
         }
-
         return result;
     }
 }

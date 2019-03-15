@@ -2,6 +2,7 @@
 //import com.sun.org.apache.regexp.internal.RE;
 //import com.sun.org.apache.xpath.internal.SourceTree;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -479,9 +480,114 @@ public class Main {
         List<String> exclude = Arrays.asList("and", "he", "the", "to", "is", "jack", "Jill");
         System.out.println(topFrequentWordExludingGiven.retrieveMostFrequestWords(str, exclude));*/
 
-        ProductExceptSelf productExceptSelf = new ProductExceptSelf();
+        /*ProductExceptSelf productExceptSelf = new ProductExceptSelf();
         int[] nums = {1,2,3,4};
-        System.out.println(Arrays.toString(productExceptSelf.productExceptSelf(nums)));
+        System.out.println(Arrays.toString(productExceptSelf.productExceptSelf(nums)));*/
+
+        /*RollingString rollingString = new RollingString();
+        List<String> operations = Arrays.asList("0 0 L","2 2 L","0 2 R","0 2 L");
+        String str = "abc";
+        System.out.println(rollingString.rollingString(str, operations));*/
+
+        /*BestTimeToBuySellStock bestTimeToBuySellStock = new BestTimeToBuySellStock();
+        //int []prices = {7,1,5,3,6,4};
+        int []prices = {1,2,3,4,5};
+        System.out.println(bestTimeToBuySellStock.maxProfit(prices));*/
+
+        /*LongestSubStringWithoutRepeating longestSubStringWithoutRepeating = new LongestSubStringWithoutRepeating();
+        String s = "pwwkew";
+        System.out.println(longestSubStringWithoutRepeating.lengthOfLongestSubstring(s));*/
+
+        /*LRUCache cache = new LRUCache(2);
+        System.out.println(cache.get(2));
+        cache.put(2,6);
+        System.out.println(cache.get(1));
+        cache.put(1,5);
+        cache.put(1,2);
+        System.out.println(cache.get(1));
+        System.out.println(cache.get(2));
+        *//*cache.put(1, 1);
+        cache.put(2, 2);
+        cache.get(1);       // returns 1
+        cache.put(3, 3);    // evicts key 2
+        cache.get(2);       // returns -1 (not found)
+        cache.put(4, 4);    // evicts key 1
+        cache.get(1);       // returns -1 (not found)
+        cache.get(3);       // returns 3
+        cache.get(4);*//*
+        System.out.println(cache.print());*/
+
+        /*NumOfIsland numOfIsland = new NumOfIsland();
+        char[][] islands = {{'1','1','1','1','0'},
+                            {'1','1','0','1','0'},
+                            {'1','1','0','0','0'},
+                            {'0','0','0','0','0'}};
+        System.out.println(numOfIsland.numIslands(islands));*/
+
+        /*TimeToEnterKeysInKeyboard timeToEnterKeysInKeyboard = new TimeToEnterKeysInKeyboard();
+        String s1 = "bdefghijkclmnopqrstuvwxyza";
+        String s2 = "cba";
+        System.out.println(timeToEnterKeysInKeyboard.getTime(s1, s2));*/
+
+        /*MaximumSumInLevelOfTree  maximumSumInLevelOfTree = new MaximumSumInLevelOfTree();
+        int []nums = {6,7,8,-10,11,25,1,-4,10,6,7,3,5};
+                //{-1,7,0,7,-8};
+        System.out.println(maximumSumInLevelOfTree.maxLevelSum(nums));*/
+
+        /*LongestPalandromicSubstring longestPalandromicSubstring = new LongestPalandromicSubstring();
+        String s = "babad";
+        System.out.println(longestPalandromicSubstring.longestPalindrome(s));*/
+
+        /*KthLargestElement kthLargestElement = new KthLargestElement();
+        int []nums = {3,2,1,5,6,4};
+        int k = 2;
+        System.out.println(kthLargestElement.findKthLargest(nums, k));*/
+
+        /*LetterCombinationOfPhoneNumber letterCombinationOfPhoneNumber = new LetterCombinationOfPhoneNumber();
+        String s = "23";
+        System.out.println(letterCombinationOfPhoneNumber.letterCombinations(s));*/
+
+        /*PascalsTriangle2 pascalsTriangle2 = new PascalsTriangle2();
+        int rowNum = 5;
+        System.out.println(pascalsTriangle2.getRow(rowNum));*/
+
+        /*MaxSumInTree maxSumInTree = new MaxSumInTree();
+        TreeNode node1 = new TreeNode(-10);
+        TreeNode node2 = new TreeNode(9);
+        TreeNode node3 = new TreeNode(20);
+        TreeNode node4 = new TreeNode(15);
+        TreeNode node5 = new TreeNode(7);
+        //TreeNode node6 = new TreeNode(6);
+        //TreeNode node7 = new TreeNode(7);
+
+        node1.left = node2;
+        node1.right = node3;
+        node3.left = node4;
+        node3.right = node5;
+        System.out.println(maxSumInTree.getMaxSum(node1));*/
+
+        /*ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
+        int[] heights = {1,8,6,2,5,4,8,3,7};
+        System.out.println(containerWithMostWater.maxArea(heights));*/
+
+        /*CoinChange coinChange = new CoinChange();
+        int[] coins = {186,419,83,408};
+        int amount = 6249;
+        System.out.println(coinChange.coinChange(coins, amount));*/
+
+        /*ValidIP validIP = new ValidIP();
+        List<String> ips = Arrays.asList("this is not a ip", "121.18.19.20", "2001:0db8:0000:0000:0000:ff00:0042:8329", "259.259.259.259");
+        System.out.println(validIP.checkIp(ips));*/
+
+        BfsInGraph bfsInGraph = new BfsInGraph();
+        int n = 5 , m = 5, maxT = 60;
+        int[] beauty = {3,7,5,6,8}, u = {0,2,2,0,1}, v = {1,0,3,4,3}, t = {10,16,13,20,15};
+        /*int n = 5 , m = 6, maxT = 70;
+        int[] beauty = {30,80,100,50,50}, u = {4,1,0,4,2,2}, v = {3,4,3,0,3,0}, t = {20,15,40,10,100,10};*/
+        System.out.println(bfsInGraph.BFS(n, m, maxT, beauty, u, v, t));
+
+
+
 
     }
 }
